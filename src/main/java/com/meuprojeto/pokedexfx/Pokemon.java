@@ -1,4 +1,4 @@
-package br.unijui.edu.prog.avaliacao.pokemonapp;
+package com.meuprojeto.pokedexfx;
 
 public class Pokemon {
     private String name;

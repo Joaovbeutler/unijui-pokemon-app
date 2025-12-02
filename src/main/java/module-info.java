@@ -5,6 +5,6 @@ module br.unijui.edu.prog.avaliacao.pokemonapp {
     requires java.net.http;
     requires jdk.crypto.ec;
 
-    opens br.unijui.edu.prog.avaliacao.pokemonapp to javafx.fxml;
-    exports br.unijui.edu.prog.avaliacao.pokemonapp;
+    opens com.meuprojeto.pokedexfx to javafx.fxml;
+    exports com.meuprojeto.pokedexfx;
 }

@@ -1,4 +1,4 @@
-package br.unijui.edu.prog.avaliacao.pokemonapp;
+package com.meuprojeto.pokedexfx;
 
 import com.google.gson.Gson;
 import java.net.URI;
