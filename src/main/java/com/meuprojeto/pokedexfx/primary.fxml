@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.meuprojeto.pokedexfx.PrimaryController">
+   
+   <left>
+      <ListView fx:id="listaLateral" prefHeight="200.0" prefWidth="150.0" BorderPane.alignment="CENTER" />
+   </left>
+   
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label text="Pokedéx FXML">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <TextField fx:id="txtBusca" onAction="#onBuscar" promptText="Buscar..." />
+                  <Button mnemonicParsing="false" onAction="#onBuscar" text="Ir" />
+               </children>
+            </HBox>
+            
+            <ImageView fx:id="imgPokemon" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            
+            <Label fx:id="lblNome" text="Carregando...">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            
+            <Label fx:id="lblId" text="" />
+            <Label fx:id="lblTypes" style="-fx-text-fill: #666; -fx-font-style: italic;" text="" />
+         </children>
+      </VBox>
+   </center>
+   
+   <bottom>
+      <HBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #ddd;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onAnterior" text="&lt;&lt; Anterior" />
+            <Button mnemonicParsing="false" onAction="#onProximo" text="Próximo &gt;&gt;" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
